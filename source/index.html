@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of Charan Kumar, a full-stack developer building responsive products with Java, Spring Boot, React, and cloud-native best practices.">
+    <title>Charan Kumar | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232563eb' rx='20'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='white' font-family='Arial, sans-serif'%3ECK%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232563eb' rx='20'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='white' font-family='Arial, sans-serif'%3ECK%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+     crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sce1.css">
+    <link rel="stylesheet" href="sec2.css">
+    <link rel="stylesheet" href="sec3.css">
+    <link rel="stylesheet" href="sec4.css">
+    <link rel="stylesheet" href="sec5.css">
+    <link rel="stylesheet" href="sec6.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar" aria-label="Primary navigation">
+        <div class="logo">CK</div>
+        <div class="nav-actions">
+            <ul class="menu-bar">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
+                <i class="fa-solid fa-moon" aria-hidden="true"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- Responsive Navbar -->
+    <nav class="navbar-menu" aria-label="Mobile navigation">
+        <div class="logo">Charan Kumar</div>
+        <div class="nav-controls">
+            <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
+                <i class="fa-solid fa-moon" aria-hidden="true"></i>
+            </button>
+            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <ul class="menu-bar">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Section 1 | Home -->
+    <section class="sec1" id="home">
+        <div class="sec-1-1">
+            <div class="hero-image-wrapper">
+                <img src="/assets/photo.jpg" alt="Portrait of Charan Kumar" loading="lazy">
+                <span class="hero-chip">Open to work</span>
+            </div>
+        </div>
+        <div class="sec-1-2">
+            <span class="sec-1-2-1">Hello, I'm</span>
+            <h1>Charan Kumar</h1>
+            <span class="sec-1-2-3">Aspiring Java & Python Full Stack Developer</span>
+            <p>
+                Recent B.E. graduate in Electronics and Communication Engineering with hands-on
+                experience in <span class="text-highlight">Java</span>, <span class="text-highlight">SQL</span>,
+                <span class="text-highlight">Python</span>, and <span class="text-highlight">JavaScript</span>. Currently crafting
+                cloud-ready web apps through Kodnest's full stack program with a focus on
+                Spring Boot, REST APIs, and thoughtful user journeys.
+            </p>
+            <ul class="hero-stats">
+                <li><span>4</span> Months SAP QM internship</li>
+                <li><span>5</span> certifications & workshops</li>
+            </ul>
+            <div class="btns">
+                <a class="btn primary" href="/assets/Resume.info.pdf" download="Charan-Kumar-Resume.pdf">Download CV</a>
+                <button class="btn secondary" type="button" onclick="window.location.href='tel:+919344930676'">Let's Talk</button>
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                    <img src="/assets/linkedin.png" alt="LinkedIn icon" loading="lazy">
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                    <img src="/assets/github.png" alt="GitHub icon" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </section>
+     <!-- Section 2 | About -->
+      <section class="sec2" id="about">
+        <a class="arrow"  href="#skills" aria-label="Scroll to skills"><img src="/assets/arrow.png" alt="" loading="lazy"></a>
+        <div class="sec-2-1">
+            <span>Get To Know More</span>
+            <h1>About Me</h1>
+        </div>
+        <div class="sec-2-2">
+            <div class="sec-2-2-1">
+               <img src="/assets/photo.jpg" alt="Charan smiling outdoors" loading="lazy">
+            </div>
+            <div class="sec-2-2-2">
+                <div class="sec-2-2-2-1">
+                    <div class="box">
+                        <img src="/assets/education.png" alt="Education icon" loading="lazy">
+                        <span>Education</span>
+                        <span>Electronics and Communication </span>
+                        <span>Engineering</span>
+                        <span>CGPA: 8.2</span>
+                    </div>
+
+                    <div class="box">
+                        <img src="/assets/experience.png" alt="Experience icon" loading="lazy">
+                        <span>Internship</span>
+                        <span>SAP QM Support</span>
+                        <span>Dhoot Transmission pvt.ltd</span>
+                        <span>4 Months</span>
+                    </div>
+                </div>
+                <p class="p1">Graduated with 8.2 CGPA, gaining strong foundations 
+                    in Computer Networks, DBMS, and Object-Oriented 
+                    Programming with hands-on projects in IoT, AI, 
+                    and Web Development. Worked on the SAP QM module supporting quality 
+                    management, ensuring data accuracy, and collaborating with IT 
+                    and quality teams to improve system efficiency.</p>
+            </div>
+        </div>
+
+      </section>
+      <!-- Section 3 | Skills -->
+       <section class="sec3" id="skills">
+        <a class="arrow" href="#projects" aria-label="Scroll to projects"><img src="/assets/arrow.png" alt="" loading="lazy"></a>
+        <div class="sec-3-1">
+            <span>Explore My</span>
+            <h1>Skills</h1>
+        </div>
+        <div class="sec-3-2">
+            <div class="box2">
+                <span>Front-End Technologies</span>
+                <div class="skills">
+                    <div class="skills-1">
+                        <img src="/assets/checkmark.png" alt="">
+                        <div class="skills-1-2">
+                            <span>HTML</span>
+                            <span>Experienced</span>
+                        </div>
+                    </div>
+                    <div class="skills-1">
+                        <img src="/assets/checkmark.png" alt="">
+                        <div class="skills-1-2">
+                            <span>CSS</span>
+                            <span>Experienced</span>
+                        </div>
+                    </div>
+                    <div class="skills-1">
+                        <img src="/assets/checkmark.png" alt="">
+                        <div class="skills-1-2">
+                            <span>Java Script</span>
+                            <span>Experienced</span>
+                        </div>
+                    </div>
+                    <div class="skills-1">
+                        <img src="/assets/checkmark.png" alt="">
+                        <div class="skills-1-2">
+                            <span>React.js</span>
+                            <span>Experienced</span>
+                        </div>
+                    </div>
+                    <div class="skills-1">
+                        <img src="/assets/checkmark.png" alt="">
+                        <div class="skills-1-2">
+                            <span>Redux</span>
+                            <span>Experienced</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="box2">
+                <span>Back-End Technologies</span>
+                <div class="skills">
+                    <div class="skills-1">
+                        <img src="/assets/checkmark.png" alt="">
+                        <div class="skills-1-2">
+                            <span>Java</span>
+                            <span>Experienced</span>
+                        </div>
+                    </div>
+                    <div class="skills-1">
+                        <img src="/assets/checkmark.png" alt="">
+                        <div class="skills-1-2">
+                            <span>C </span>
+                            <span>Experienced</span>
+                        </div>
+                    </div>
+                    <div class="skills-1">
+                        <img src="/assets/checkmark.png" alt="">
+                        <div class="skills-1-2">
+                            <span>Python</span>
+                            <span>Learning</span>
+                        </div>
+                    </div>
+                    <div class="skills-1">
+                        <img src="/assets/checkmark.png" alt="">
+                        <div class="skills-1-2">
+                            <span>MySQL</span>
+                            <span>Experienced</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-1">
+                        <img src="/assets/checkmark.png" alt="">
+                        <div class="skills-1-2">
+                            <span>DSA</span>
+                            <span>Learning</span>
+                        </div>
+                    </div>
+                    <div class="skills-1">
+                        <img src="/assets/checkmark.png" alt="">
+                        <div class="skills-1-2">
+                            <span>Spring Boot</span>
+                            <span>Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+       <!-- Section 4 | projects -->
+        <section class="sec4" id="projects">
+            <a class="arrow" href="#contact" aria-label="Scroll to contact"><img src="/assets/arrow.png" alt="" loading="lazy"></a>
+            <div class="sec-4-1">
+                <span>Browse My Recent</span>
+                <h1>Projects</h1>
+            </div>
+            <div class="sec-4-2">
+                <div class="box3">
+                    <img src="/assets/projet1.png" alt="Dashboard screens" loading="lazy"/>
+                    <div class="box3-2">
+                        <span>Responsive Task App</span>
+                <div class="btns">
+                    <a class="btn ghost" href="#" target="_blank" rel="noopener noreferrer">Github</a>
+                    <a class="btn primary" href="https://tasks-buddy.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+                    </div>
+                </div>
+                
+               <div class="box3">
+                    <img src="/assets/project2.png" alt="Mobile banking UI" loading="lazy"/>
+                    <div class="box3-2">
+                        <span>AI Virtual Doctor</span>
+                <div class="btns">
+                    <a class="btn ghost" href="#" target="_blank" rel="noopener noreferrer">Github</a>
+                    <a class="btn primary" href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+                    </div>
+                </div>
+                <div class="box3">
+                    <img src="/assets/project3.png" alt="Task manager wireframe" loading="lazy"/>
+                    <div class="box3-2">
+                        <span>Responsive Portfolio</span>
+                <div class="btns">
+                    <a class="btn ghost" href="#" target="_blank" rel="noopener noreferrer">Github</a>
+                    <a class="btn primary" href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Section 5 | Contact -->
+
+        <section class="sec5" id="contact">
+            
+           <div class="sec-5-1">
+            <span>Get in Touch</span>
+            <h1>Contact Me</h1>
+           </div>
+           <div class="sec-5-2">
+            <a class="a1" href="mailto:charancharan89049@gmail.com"><img src="/assets/email.png" alt="Email icon" loading="lazy"><span>charancharan89049@gmail.com</span></a>
+            <a class="a2" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img src="/assets/linkedin.png" alt="LinkedIn icon" loading="lazy"><span>LinkedIn</span></a>
+           </div>
+        </section>
+
+        <section class="sec6" id="footer"> 
+           
+         <ul class="menu-bar">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>  
+        <span>copyright &#169; 2025 Charan kumar.All Rights Reserved</span>
+         <a class="arrow arrow2" href="#navbar" aria-label="Back to top"><img src="/assets/arrow.png" alt="" loading="lazy"></a>
+        </section>
+    <script src="main.js"></script>
+</body>
+</html>

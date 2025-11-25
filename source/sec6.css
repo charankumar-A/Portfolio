@@ -1,0 +1,36 @@
+.sec6 {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  padding: 48px 0 12px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  color: var(--muted);
+  position: relative;
+}
+
+.sec6 .menu-bar {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sec6 span {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 640px) {
+  .sec6 .menu-bar {
+    gap: 12px;
+  }
+
+  .sec6 span {
+    text-align: center;
+    line-height: 1.4;
+  }
+}
