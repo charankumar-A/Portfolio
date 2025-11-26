@@ -16,27 +16,29 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build-and-deploy:
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
-      - name: Copy files to root
+      - name: Copy source files
         run: |
-          cp -r source/* .
-          cp -r assets .
+          mkdir -p _site
+          cp -r source/* _site/
+          cp -r assets _site/
+          ls -la _site/
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: '_site'
       
       - name: Deploy to GitHub Pages
         id: deployment
